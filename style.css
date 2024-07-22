@@ -96,6 +96,23 @@
     background-color: gray;
   }
 
+  @keyframes wordss {
+
+    0%,
+    30% {
+      content: "Web Developer";
+    }
+  
+    31%,
+    60% {
+      content: "Video Editor";
+    }
+  
+    61%,
+    100% {
+      content: "Photo Editor";
+    }
+  }
 
 /* section 2 */
   #section2{
@@ -256,28 +273,40 @@
    #percent-html{
     width: 650px;
     margin-left: 310px;
+    animation: percentRate 1.5s ease-in-out;
    }
    #percent-css{
     width: 650px;
     margin-left: 341px;
+    animation: percentRate 1.5s ease-in-out;
    }
    #percent-js{
     width: 500px;
     margin-left: 198px;
+    animation: percentRate 1.5s ease-in-out;
    }
    #percent-c{
     width: 430px;
     margin-left: 360px;
+    animation: percentRate 1.5s  ease-in-out;
    }
    #percent-java{
     width: 380px;
     margin-left: 319px;
+    animation: percentRate 1.5s  ease-in-out;
    }
    #percent-php{
     width: 500px;
     margin-left: 333px;
+    animation: percentRate 1.5s ease-in-out;
    }
 
+
+   @keyframes percentRate{
+    from{
+      width:0px;
+    }
+   }
 
   /* section 4 */
   #section4{
@@ -356,24 +385,6 @@
   width: 200px;
 }
 
-
-@keyframes wordss {
-
-  0%,
-  30% {
-    content: "Web Developer";
-  }
-
-  31%,
-  60% {
-    content: "Video Editor";
-  }
-
-  61%,
-  100% {
-    content: "Photo Editor";
-  }
-}
 
 
 @keyframes scroll {
