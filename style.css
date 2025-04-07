@@ -498,7 +498,7 @@
     border: 2px solid rgba(221, 160, 221, 0.512); 
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (max-width: 1024px) {
 
   /*Header*/
 
@@ -581,6 +581,4 @@
       height: 470px;
       width: 550px;
     }
-  /*footer*/
-
   }
