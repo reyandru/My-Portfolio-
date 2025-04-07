@@ -14,8 +14,7 @@
     justify-content: space-between;
     padding: 10px;
     height: 130px;
-    width: 1520px;
-    
+    width: 100%;
     position: absolute;
     z-index: 999;
   }
@@ -31,7 +30,7 @@
     align-items: center;
     justify-content: space-between;
     height: 820px;
-    width: 1520px;
+    width: 100%;
     background-image: url(assets/code.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,7 +117,7 @@
   #section2{
     padding: 30px;
     height: 820px;
-    width: 1520px;
+      width: 100%;
     background-image:linear-gradient(#5de0e6,#004aad);
     z-index: 1;
   }
@@ -149,7 +148,7 @@
   #section3{
     padding: 50px;
     height: 825px;
-    width: 1520px;
+      width: 100%;
     background-image: url(assets/skills.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -315,7 +314,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 870px;
-    width: 1520px;
+      width: 100%;
   }
 
   .titles{
@@ -380,11 +379,6 @@
   width: 600px;
 }
 
-.brpic1{
-  height: 250px;
-  width: 200px;
-}
-
 
 
 @keyframes scroll {
@@ -396,7 +390,7 @@
   /* footer */
   footer{
     height: 380px;
-    width: 1520px;
+      width: 100%;
     background-image:linear-gradient(#000000,#737373);
   }
 
@@ -443,7 +437,7 @@
     font-weight:bold ;
     text-decoration: none;
     font-family: 'Poppins';
-    transition: border-radius 0.8s, padding 0.8s, background-color 0.8s;
+    transition: border-radius 0.5s, padding 0.5s, background-color 0.5s;
   }
 
   .navs-foot a:hover{
@@ -492,3 +486,101 @@
     }
   }
 
+
+  ::-webkit-scrollbar {
+    width: 12px; 
+    border-radius:10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: black; 
+    border-radius:10px;
+    border: 2px solid rgba(221, 160, 221, 0.512); 
+  }
+
+  @media only screen and (min-width: 1024px) {
+
+  /*Header*/
+
+  header{
+    height: 100px;
+    width: 100%;
+  }
+
+  header img{
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+    animation: fadeBot 0.8s ease-in 0s 1 normal forwards;
+  }
+
+  .navs{
+    font-size: 18px;
+    width: 600px;
+  }
+
+  /*section1*/
+  
+  .title h2{
+    font-size: 50px;
+  }
+
+
+  .title h1::before{
+    font-size: 50px;
+  }
+
+  .img img{
+    height: 350px;
+  }
+
+  /*section2*/
+
+  #section2 h1{
+   font-size: 70px;
+  }
+
+  .me p{
+    font-size: 30px;
+  }
+  /*section3*/
+
+  .titel-skills{
+    font-size: 40px;
+    height: 30%;
+  }
+
+  .Skill{
+    height: 350px;
+    width: 100%;
+  }
+
+  #percent-html{
+    width: 450px;
+   }
+   #percent-css{
+    width: 400px;
+   }
+   #percent-js{
+    width: 300px;
+   }
+   #percent-c{
+    width: 260px;
+   }
+   #percent-java{
+    width: 210px;
+   }
+   #percent-php{
+    width: 260px;
+   }
+  /*section4*/
+    .titles{
+      font-size: 40px;
+    }
+    .brpic{
+      height: 470px;
+      width: 550px;
+    }
+  /*footer*/
+
+  }
