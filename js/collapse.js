@@ -15,7 +15,7 @@ logoBtn.addEventListener('click', () => {
   });
 
   if (settingsWrapper.classList.contains('show')) {
-    settingsWrapper.style.width = isCollapsed ? '1rem' : '100%';
+    settingsWrapper.style.width = isCollapsed ? '10rem' : '100%';
     settingsWrapper.style.top = isCollapsed ? '0' : '3.4rem';
     settingsWrapper.style.left = isCollapsed ? '100%' : '0';
   }
