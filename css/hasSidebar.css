@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar{
+  display: flex;
+  align-items: center;
+  row-gap: 2rem;
+  flex-direction: column;
+  width: 20%;
+  background-color: #D9D9D9;
+  transition: all 0.3s ease;
+}
+
+
+.sidebar.dark{
+  background-color: #4A7346;
+}
+
+body.dark{
+  background-color: #363131;
+}
+
+.sidebar.collapse{
+  width: 5%;
+  /* overflow: hidden; */
+}
+
+.logo{
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+}
+
+nav > ul{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 70%;
+}
+
+nav > ul > li{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  column-gap: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.3rem;
+  position: relative;
+  font-weight: bold;
+}
+
+nav > ul > li > a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.hover{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  column-gap: 1.5rem;
+  width: 100%;
+  }
+
+.hover:before{
+  position: absolute;
+  content: "";
+  background-color: rgb(21, 214, 21);
+
+  height: 0.2rem;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.hover:hover:before{
+  width: 90%;  
+}
+
+.nav-icons{
+  height: 40px;
+}
+
+.nav-text{
+  font-size: 1.5rem;
+}
+
+.settings-nav{
+  position: relative;
+}
+
+.settings-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  background-color:burlywood;
+  height: 0;
+  overflow: hidden; 
+  top: 3.4rem;
+  left: 0;
+  transition: height 0.3s ease, padding 0.3s ease;
+}
+
+.settings-wrapper.show {
+  height: 5rem;
+  padding: 1rem;
+  z-index: 99;
+}
+
+
+.theme-Btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80%;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  transition: all 0.3s ease;
+}
+
+section{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}

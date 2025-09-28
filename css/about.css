@@ -1,0 +1,80 @@
+ul > li:nth-child(2) a .nav-text{
+  color: rgb(21, 214, 21) !important;
+}
+
+section{
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-head{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-title{
+  font-size: 4rem;
+  border: 7px solid black;
+  padding: 2.5rem;
+  border-radius: 3rem;
+}
+
+.picture{
+  border: 3px solid black;
+}
+
+.aboutText{
+  height: 50%;
+  font-weight: bold;
+}
+.aboutInfo{
+  display: flex;
+  width: 100%;
+  height: 60%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.info1, .info2{
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.descriptions{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2.5rem;
+}
+
+.resume-dl{
+  width: 100%;
+}
+
+.downloadResume{
+  padding: 0.8rem 2.5rem; 
+  border-radius: 2rem;
+  font-size: 1.2rem; 
+  background-color: rgb(64, 233, 64);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.downloadResume > a{
+  text-decoration: none;
+  color: white;
+}
