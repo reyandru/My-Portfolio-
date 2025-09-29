@@ -1,4 +1,11 @@
 const meterFills = document.querySelectorAll('.meter-fill');
+const seeMore = document.getElementById('seeMore');
+const programmingStats = document.getElementById('progStat');
+const skillSet = document.getElementById('skillSet');
+const skillTtl = document.querySelector('.skll-ttl');
+const progTtl = document.querySelectorAll('.prog-ttl');
+const designTtl = document.querySelector('.design-tools');
+
 
 meterFills.forEach(meter => {
   const width = meter.style.width;
@@ -14,3 +21,30 @@ meterFills.forEach(meter => {
     meter.style.backgroundColor = "red";
   }
 });
+
+
+seeMore.addEventListener('click', () => {
+  programmingStats.classList.add('active');
+  skillSet.style.display = "none";
+});
+
+
+function applyThemes(isDark) {
+  const color = isDark ? 'white' : 'black';
+  const border = isDark ? '7px solid white' : '7px solid black';
+
+  skillTtl.style.color = color;
+  designTtl.style.color = color;
+  skillTtl.style.border = border;
+
+  progTtl.forEach(prog => {
+    prog.style.color = color;
+  })
+}
+
+function initThemes() {
+  const savedTheme = localStorage.getItem('theme');
+  applyThemes(savedTheme === 'dark');
+}
+
+initThemes();

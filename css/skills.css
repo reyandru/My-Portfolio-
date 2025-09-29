@@ -24,21 +24,78 @@ section{
   width: 20%;
 }
 
-.programming-tools{
+.skills-set{
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 85%;
+  width: 100%;
+  text-align: center;
+}
+
+.skill1,.skill2, .skill3{
+  width: 25%;
+  border: 1px solid black;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.skill1{
+  background-color: green;
+}
+
+.skill2{
+  background-color: red;
+}
+
+.skill3{
+  background-color: blue;
+}
+.skill-ttl{
+  color: rgb(212, 227, 139);
+}
+.skill-desc{
+  height: 40%;
+  color: white;
+  text-align: justify;
+  width: 90%;
+  font-size: 1.1rem;
+  text-indent: 2rem;
+  line-height: 1.5rem;
+}
+
+.see-more{
+  width: 30%;
+  height: 8%;
+  border-radius:4rem;
+  font-size: 1rem;
+  background-color: rgb(64, 233, 64);
+  color: rgb(46, 41, 41);
+  border: none;
+  cursor: pointer;
+}
+
+.programming-tools{
+  display: none;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
   width: 100%;
-  border: 1px solid black;
+}
+
+.programming-tools.active{
+  display: flex;
 }
 
 .programming{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  height: 58%;
+  height: 70%;
   width: 100%;
   padding: 0.5rem;
   border: 1px solid black;
@@ -89,27 +146,33 @@ section{
 .skill {
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 70%;
   display: flex;
   column-gap: 10px;
   margin-bottom: 20px;
 }
 
+.programmings{
+  width: 20%;
+}
 .meter-container {
   background-color: #ddd;
-  height: 1.5rem;
+  height: 2rem;
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
-  max-width: 400px;
+  max-width: 100rem;
   margin-top: 5px;
 }
 
 .meter-fill {
-  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1rem;
   color: white;
-  text-align: right;
   height: 100%;
+  padding-inline: 0.5rem;
   background-color: #4caf50;
   width: 0;
   transition: width 1s ease-in-out;
