@@ -1,5 +1,5 @@
 const gallery = document.getElementById('projectsGallery');
-
+const projTtl = document.querySelector('.prjct-ttl');
 const projects = [
   {
     name: "Blog website",
@@ -67,3 +67,27 @@ function renderProjects() {
 }
 
 renderProjects();
+
+function applyThemes(isDark) {
+  const color = isDark ? 'white' : 'black';
+  const border = isDark ? '7px solid white' : '7px solid black';
+
+  projTtl.style.color = color;
+  projTtl.style.border = border;
+  gallery.style.border = border;
+  document.querySelectorAll('.proj-name').forEach(names=> {
+    names.style.color = color;
+  });
+}
+
+function initThemes() {
+  const savedTheme = localStorage.getItem('theme');
+  applyThemes(savedTheme === 'dark');
+}
+
+initThemes();
+
+window.addEventListener('themeChange', () => {
+  const isDark = localStorage.getItem('theme') === 'dark';
+  applyThemes(isDark);
+});
