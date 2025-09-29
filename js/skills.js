@@ -7,7 +7,7 @@ const progTtl = document.querySelectorAll('.prog-ttl');
 const progs = document.querySelectorAll('.programmings');
 const designTtl = document.querySelector('.design-tools');
 const tools = document.querySelector('.prog-tools');
-
+const title = document.querySelector('.skll-ttl');
 
 
 meterFills.forEach(meter => {
@@ -29,6 +29,7 @@ meterFills.forEach(meter => {
 seeMore.addEventListener('click', () => {
   programmingStats.classList.add('active');
   skillSet.style.display = "none";
+  title.style.display = "none";
 });
 
 

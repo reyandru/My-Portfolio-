@@ -13,14 +13,17 @@ body{
   display: flex;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
 .sidebar{
+  position: fixed;
   display: flex;
   align-items: center;
   row-gap: 2rem;
   flex-direction: column;
   width: 20%;
+  height: 100%;
   background-color: #D9D9D9;
   transition: all 0.3s ease;
 }
@@ -162,4 +165,6 @@ section{
   justify-content: space-between;
   width: 100%;
   padding: 1rem;
+  margin-left: 19rem;
+  transition: all 0.3s ease;
 }

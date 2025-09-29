@@ -3,6 +3,7 @@ const sidebarCol = document.querySelector('.sidebar');
 const navText = document.querySelectorAll('.nav-text');
 const navs = document.querySelector('.navs');
 const settingsWrapper = document.getElementById('settingsWrapper');
+const section = document.querySelectorAll('.main-section');
 
 logoBtn.addEventListener('click', () => {
   const isCollapsed = sidebarCol.classList.toggle('collapse');
@@ -12,6 +13,11 @@ logoBtn.addEventListener('click', () => {
 
   navText.forEach(text => {
     text.style.display = isCollapsed ? "none" : "block";
+  });
+    
+  section.forEach(sctn => {
+    sctn.style.marginLeft = isCollapsed ? "4.8rem":"19rem";
+    
   });
 
   if (settingsWrapper.classList.contains('show')) {

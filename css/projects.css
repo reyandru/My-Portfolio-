@@ -1,3 +1,55 @@
 ul > li:nth-child(4) a .nav-text{
   color: rgb(21, 214, 21) !important;
 }
+
+section{
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  overflow: auto;
+}
+
+.section-head{
+  width: 100%;  
+}
+
+.prjct-ttl{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  border: 7px solid black;
+  padding: 1.5rem 2.3rem;
+  border-radius: 3rem;  
+  width: 30%;
+}
+
+.projects-gallery{
+  margin-top: 0.5rem;
+  height: 40rem;
+  overflow-y: auto;
+  display: grid;
+  gap: 3rem 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(3, 32.4%);
+}
+
+.projects{
+  border: 0.1rem solid black;
+  height: 18rem;
+  width: 100%;
+}
+
+.proj-pic{
+  height: 100%;
+  width: 100%;
+}
+
+.proj-name{
+  font-size: 1.2rem;
+}
+
+.link-proj{
+  text-decoration: none;
+  color: black;
+}
