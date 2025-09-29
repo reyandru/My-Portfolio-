@@ -7,9 +7,6 @@ const texts = document.querySelectorAll('.nav-text');
 const hover = document.querySelectorAll('.hover');
 const body = document.body;
 
-
-
-
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'dark') {
   applyDarkTheme();
@@ -21,9 +18,11 @@ themeBtn.addEventListener('click', () => {
   if (sidebars.classList.contains('dark')) {
     applyLightTheme();
     localStorage.setItem('theme', 'light');
+    window.dispatchEvent(new Event('themeChange')); // 🔔 Notify others
   } else {
     applyDarkTheme();
     localStorage.setItem('theme', 'dark');
+    window.dispatchEvent(new Event('themeChange')); // 🔔 Notify others
   }
 });
 
@@ -46,7 +45,7 @@ function applyDarkTheme() {
   body.style.backgroundColor = "#363131";
   themeBtn.style.backgroundColor = "black";
   themeBtn.style.color = "white";
-   texts.forEach(txt => {
+  texts.forEach(txt => {
     txt.style.color = "white";
   });
 }

@@ -4,7 +4,10 @@ const programmingStats = document.getElementById('progStat');
 const skillSet = document.getElementById('skillSet');
 const skillTtl = document.querySelector('.skll-ttl');
 const progTtl = document.querySelectorAll('.prog-ttl');
+const progs = document.querySelectorAll('.programmings');
 const designTtl = document.querySelector('.design-tools');
+const tools = document.querySelector('.prog-tools');
+
 
 
 meterFills.forEach(meter => {
@@ -36,10 +39,13 @@ function applyThemes(isDark) {
   skillTtl.style.color = color;
   designTtl.style.color = color;
   skillTtl.style.border = border;
-
+  tools.style.color = color;
   progTtl.forEach(prog => {
     prog.style.color = color;
-  })
+  });
+  progs.forEach(progs => {
+    progs.style.color = color;
+  });
 }
 
 function initThemes() {
@@ -48,3 +54,8 @@ function initThemes() {
 }
 
 initThemes();
+
+window.addEventListener('themeChange', () => {
+  const isDark = localStorage.getItem('theme') === 'dark';
+  applyThemes(isDark);
+});
