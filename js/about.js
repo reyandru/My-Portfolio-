@@ -6,7 +6,7 @@ const picture = document.querySelector('.picture');
 const aboutDesc = document.querySelector('.descriptions');
 
 const BIRTH_YEAR = 2003;
-const BIRTH_MONTH = 7;
+const BIRTH_MONTH = 7;                                    
 const BIRTH_DAY = 19;
 
 function computeAge() {
